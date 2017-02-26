@@ -1,7 +1,13 @@
- function clearDisplay(){
+function clearDisplay(){
      document.getElementById("display").innerHTML = "";
  }
 
-function display(){
-    document.getElementById("display-bar").innerHTML = "9"
+function display(userInput){
+document.getElementById("display-bar").innerHTML += userInput;
 }
+
+function calculate(){
+ var answer = eval(document.getElementById("display-bar").innerHTML);
+document.getElementById("display-bar").innerHTML = answer;
+}
+

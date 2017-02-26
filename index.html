@@ -2,13 +2,15 @@
 <html>
     <head>
         <title>My Calculator</title>
+        <link rel="stylesheet" href="style.css" type="text/css" />
+         "https://fonts.googleapis.com/css?family=VT323"
     </head>
     <body>
        <h1>My Calculator</h1> 
        <div id="keypad">
-           <table border="2">
+           <table>
                <tr>
-                   <td colspan="4" id="display-bar" height="20px"></td></td>
+                   <td colspan="4"  id="display-bar"  height="20px"><div></div></td>
                </tr>
                <tr>
                    <td><input type="button" value="9" onclick="display(9)"/></td>
@@ -30,8 +32,8 @@
                </tr>
                    <tr>
                    <td><input type="button" value="0" onclick="display(0)"/></td>
-                   <td><input type="button" value="C" onclick="clearDisplay()"/></td>
-                   <td><input type="button" value="=" onclick=""/></td>
+                   <td><input type="button" value="C" onclick="clearDisplay(c)"/></td>
+                   <td><input type="button" value="=" onclick="calculate()"/></td>
                    <td><input type="button" value="+" onclick="display('+')"/></td>
                </tr>
            </table>
